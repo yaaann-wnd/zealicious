@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
     background-color: #333;
     font-family: 'Raleway', sans-serif;
     color: azure;
@@ -28,6 +28,8 @@
     font-weight: 800;
     background-size: 200%;
     animation: gradient 3s linear infinite;
+    animation: judul 700ms ease-in 700ms forwards;
+    opacity: 0;
 }
 
 .isi {
@@ -35,6 +37,8 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
+    opacity: 0;
+    animation: isi 700ms ease-out 900ms forwards;
 }
 
 .lingkaran {
@@ -68,6 +72,26 @@
 
     to {
         background-position: -200% center;
+    }
+}
+
+@keyframes judul {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes isi {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
