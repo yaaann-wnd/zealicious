@@ -12,6 +12,7 @@
     font-family: 'Raleway', sans-serif;
     color: azure;
     position: relative;
+    overflow: hidden;
 }
 
 .judul {
@@ -45,7 +46,7 @@
 .atas {
     top: -15%;
     left: -25%;
-    background-color: hsl(199deg 64% 73%);
+    background-color: hsl(199, 100%, 70%);
     filter: blur(100px);
     animation: atas 700ms ease-out;
 }
